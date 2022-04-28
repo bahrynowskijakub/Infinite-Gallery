@@ -1,0 +1,39 @@
+/**
+* Favorites CSS
+*/
+
+.favorites-modal {
+  .favorites-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .favorites-content {
+    transform: translateX(100%);
+    animation: showFavoritesContent 0.5s forwards;
+    animation-delay: 1s;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__images-wrapper {
+      column-count: 1;
+
+      @media (min-width: 768px) {
+        column-count: 2;
+      }
+      @media (min-width: 1024px) {
+        column-count: 3;
+      }
+    }
+  }
+}
+
+@keyframes showFavoritesContent {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

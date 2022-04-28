@@ -1,0 +1,15 @@
+/**
+* Gallery CSS
+*/
+
+.infinite-gallery {
+  figure {
+    @media (min-width: 1024px) {
+      &:nth-child(18n + 3),
+      &:nth-child(18n + 10) {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+    }
+  }
+}

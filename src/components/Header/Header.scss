@@ -1,0 +1,15 @@
+/**
+* Header CSS
+*/
+
+header {
+  .favorites {
+    &__button {
+      &:hover {
+        svg {
+          fill: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/**
+* Icons CSS
+*/
+
+.favicon-default {
+  &:hover {
+    fill: red;
+  }
+}
+
+.favicon-white {
+  &:hover {
+    fill: #fff;
+  }
+}

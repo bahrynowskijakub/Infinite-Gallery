@@ -1,0 +1,41 @@
+/**
+* Single Image CSS
+*/
+
+.single-image-wrapper {
+  &:hover {
+    .single-image-wrapper__buttons-overlay {
+      display: flex;
+    }
+  }
+
+  &__buttons-overlay {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__image {
+    background: rgb(225, 225, 233);
+    background: linear-gradient(
+      90deg,
+      rgba(225, 225, 233, 1) 0%,
+      rgba(172, 215, 223, 1) 100%
+    );
+    background-size: 300%;
+    min-height: 400px;
+    animation: bgGradientAnimation 1s infinite;
+  }
+}
+
+@keyframes bgGradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 20% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

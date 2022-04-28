@@ -1,0 +1,17 @@
+/**
+* Single Favorite Image CSS
+*/
+
+.single-favorite-image-wrapper {
+  &:hover {
+    .single-favorite-image-wrapper__buttons-overlay {
+      display: flex;
+    }
+  }
+
+  &__buttons-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    color: #fff;
+  }
+}
